@@ -1,23 +1,23 @@
-import styled from 'styled-components'
-import { Link as LinkR } from 'react-router-dom'
-import { Link as LinkS } from 'react-scroll'
+import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #000;
     height: 80px;
-    // margin-top: -80px;
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem:
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 10;
 
     @media screen and (max-width: 960px) {
-        transition: 0.8s all ease:
+        transition: 0.8s all ease;
     }
-`
+`;
 
 
 export const NavbarContainer = styled.div`
@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
-`
+`;
 
 export const NavLogo = styled(LinkR)`
     color: #fff;
@@ -37,10 +37,10 @@ export const NavLogo = styled(LinkR)`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 24px:
+    margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
-`
+`;
 
 export const MobileIcon = styled.div`
     display: none;
@@ -55,7 +55,7 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #fff;
     }
-`
+`;
 
 export const NavMenu = styled.ul`
     display: flex;
@@ -67,11 +67,11 @@ export const NavMenu = styled.ul`
     @media screen and (max-width: 768px) {
         display: none;
     }
-`
+`;
 
 export const NavItem = styled.li`
     height: 8;
-`
+`;
 
 export const NavLinks = styled(LinkS)`
     color: #fff;
@@ -81,12 +81,12 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    color: $fff;
+    color: #fff;
 
     &.active {
         border-bottom: 3px solid #01bf71;
     }
-`
+`;
 
 export const NavBtn = styled.nav`
     display: flex;
@@ -96,7 +96,7 @@ export const NavBtn = styled.nav`
         display: none;
 
     }
-`
+`;
 
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50;
@@ -116,4 +116,4 @@ export const NavBtnLink = styled(LinkR)`
         background: #fff;
         color: #010606;
     }
-`
+`;
