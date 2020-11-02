@@ -18,7 +18,7 @@ const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
-        if(window.scrollY >= 80) {
+        if(window.scrollY >= 718) {
             setScrollNav(true);
         } else {
             setScrollNav(false);
@@ -38,40 +38,36 @@ const Navbar = ({ toggle }) => {
             <IconContext.Provider value={{ color: '#fff'}}>
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to="/" onClick={toggleHome}>futurn</NavLogo>
+                        <NavLogo to="/" onClick={toggleHome}>dev.Denis</NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars/>
                         </MobileIcon>
                         <NavMenu>
-                            <NavItem>
-                                <NavLinks to="about"
+                        <NavItem>
+                            <NavLinks to="home"
                                 smooth = {true} duration={500} spy={true} exact='true' offset={-80}
-                                >About</NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to="discover"
+                            >Home</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="about"
                                 smooth = {true} duration={500} spy={true} exact='true' offset={-80}
-                                >Discover</NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to="services"
+                            >About</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="portfolio"
                                 smooth = {true} duration={500} spy={true} exact='true' offset={-80}
-                                >Services</NavLinks>
+                            >Portfolio</NavLinks>
                             </NavItem>
-                            <NavItem>
-                                <NavLinks to="signup"
+                        <NavItem>
+                        <NavLinks to="contact"
                                 smooth = {true} duration={500} spy={true} exact='true' offset={-80}
-                                >Sign Up</NavLinks>
-                            </NavItem>
+                            >Contact</NavLinks>
+                        </NavItem>
                         </NavMenu>
-                        <NavBtn>
-                            <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                        </NavBtn>
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>
         </>
     )
 }
-
-export default Navbar
+export default Navbar;

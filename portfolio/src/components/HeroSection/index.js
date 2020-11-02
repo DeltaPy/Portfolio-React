@@ -14,25 +14,24 @@ const HeroSection = () => {
 
 
     return (
-        <HeroContainer>
+        <HeroContainer id="home">
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
+                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4'/> */}
             </HeroBg>
             <HeroContent>
-                <HeroH1>Virtual Banking Made Easy</HeroH1>
+                <HeroH1>Hello, I'm <span style={{color: "#FF4532"}}>Denis Dimchev.</span></HeroH1>
                 <HeroP>
-                    Sign up for a new account today and receive $250 in credit towards your
-                    next payment.
+                    I'm a software developer.
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button 
-                        to='signup' 
+                        to='about' 
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary="true"
                         dark='true'
-                     >
-                        Get Started {hover ? <ArrowForward/> : <ArrowRight/>}
+                        smooth = {true} duration={500} spy={true} exact='true' offset={-80}
+                     > Find out more {hover ? <ArrowForward/> : <ArrowRight/>}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
