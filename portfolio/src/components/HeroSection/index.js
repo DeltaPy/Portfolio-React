@@ -3,7 +3,7 @@ import Video from '../../videos/video.mp4';
 import {Button} from '../ButtonElements';
 import {HeroContainer, HeroBg, VideoBg, HeroContent, 
     HeroH1, HeroP, HeroBtnWrapper, 
-    ArrowForward, ArrowRight} from './HeroElements';
+    ArrowForward} from './HeroElements';
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
@@ -28,10 +28,11 @@ const HeroSection = () => {
                         to='about' 
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
-                        primary="true"
-                        dark='true'
+                        primary="false"
+                        dark='false'
+                        big='false'
                         smooth = {true} duration={500} spy={true} exact='true' offset={-80}
-                     > Find out more {hover ? <ArrowForward/> : <ArrowRight/>}
+                     > Find out more <ArrowForward hovered={hover ? 0 : 1}/>
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>

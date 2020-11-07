@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 
 export const HeroContainer = styled.div`
@@ -19,13 +19,13 @@ export const HeroContainer = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(
-            180deg, 
-            rgba(0,0,0,0.1) 0%,
-            rgba(0,0,0,0.6) 100%
-        ),
-        linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-    z-index: 2;
+        // background: linear-gradient(
+        //     0deg, 
+        //     rgba(0,0,0,0.1) 0%,
+        //     rgba(0,0,0,0.6) 100%
+        // ),
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+        z-index: 2;
     }
 `;
 
@@ -95,12 +95,9 @@ export const HeroBtnWrapper = styled.div`
     align-items: center;
 `;
 
-export const ArrowForward = styled(MdArrowForward)`
+export const ArrowForward = styled(AiOutlineArrowRight)`
     margin-left: 8px;
     font-size: 20px;
-`;
-
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-    margin-left: 8px;
-    font-size: 20px;
+    transition: 0.4s;
+    transform: ${({hovered}) => (hovered ? 'rotate(0deg)' : 'rotate(90deg)')};
 `;
