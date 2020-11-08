@@ -62,7 +62,8 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
-    font-size: 48px;
+    margin-top: 24px;
+    font-size: 38px;
     line-height: 1.1;
     font-weight: 600;
     color: ${({lightText}) => (lightText ? '#f7f8fa' : '#171717')};
@@ -91,7 +92,20 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-    width: 100%;
-    margin: 0 0 10px 0;
+    border-radius: 50%;;
+    max-width: 100%;
+    height: 300px;
     padding-right: 0;
+    
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+
+    @keyframes floating { 
+        0% { transform: translate(0,  0px); } 
+        50%  { transform: translate(0, 10px); } 
+        100%   { transform: translate(0, -0px); }     
+    } 
 `;
+
