@@ -10,8 +10,6 @@ import {
     NavMenu, 
     NavItem, 
     NavLinks,
-    NavBtn,
-    NavBtnLink,
 } from './NavbarElements'
 
 const Navbar = ({ toggle }) => {
@@ -45,22 +43,22 @@ const Navbar = ({ toggle }) => {
                         <NavMenu>
                         <NavItem>
                             <NavLinks to="home"
-                                smooth = {true} duration={500} spy={true} exact='true' offset={-80}
+                                smooth = {true} duration={800} spy={true} exact='true' offset={-80}
                             >Home</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="about"
-                                smooth = {true} duration={500} spy={true} exact='true' offset={-80}
+                                smooth = {true} duration={800} spy={true} exact='true' offset={-80}
                             >About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="portfolio"
-                                smooth = {true} duration={500} spy={true} exact='true' offset={-80}
-                            >Portfolio</NavLinks>
+                            <NavLinks to="projects"
+                                smooth = {true} duration={800} spy={true} exact='true' offset={-80}
+                            >Projects</NavLinks>
                             </NavItem>
                         <NavItem>
                         <NavLinks to="contact"
-                                smooth = {true} duration={500} spy={true} exact='true' offset={-80}
+                                smooth = {true} duration={800} spy={true} exact='true' offset={-80}
                             >Contact</NavLinks>
                         </NavItem>
                         </NavMenu>

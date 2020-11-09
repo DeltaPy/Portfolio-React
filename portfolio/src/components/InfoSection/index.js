@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../ButtonElements';
+import ProgressRing from './ProgressRing/ProgressRing.js';
 import {
     InfoContainer,
      InfoWrapper,
@@ -10,10 +10,15 @@ import {
           TopLine,
            Heading,
             Subtitle,
-             BtnWrap,
-             ImgWrap,
-             Img
+            ImgWrap,
+            Img,
+            SpinnerRow1,
+            SpinnerRow2,
+            SpinnerWrap,
             }  from './InfoElements';
+
+
+
 
 const InfoSection = ({
         lightBg,
@@ -37,10 +42,38 @@ const InfoSection = ({
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
-                            
+                        <TextWrapper>
+                            <TopLine>Skills</TopLine>
+                        </TextWrapper>
+            
+                            <SpinnerRow1>
+                                <SpinnerWrap>
+                                    <ProgressRing text={"HTML"} percentage={69}/>
+                                </SpinnerWrap>
+                                <SpinnerWrap>
+                                    <ProgressRing text={"CSS"} percentage={69}/>
+                                </SpinnerWrap>
+                                <SpinnerWrap>
+                                    <ProgressRing/>
+                                </SpinnerWrap>
+                            </SpinnerRow1>
+
+                            <SpinnerRow2>
+                                <SpinnerWrap>
+                                    <ProgressRing/>
+                                </SpinnerWrap>
+                                <SpinnerWrap>
+                                    <ProgressRing/>
+                                </SpinnerWrap>
+                                <SpinnerWrap>
+                                    <ProgressRing/>
+                                </SpinnerWrap>
+                            </SpinnerRow2>
                         </Column1>
                         <Column2>
-                        <TopLine>{topLine}</TopLine>
+                        <TextWrapper>
+                            <TopLine>{topLine}</TopLine>
+                        </TextWrapper>
                             <ImgWrap>
                                 <Img src={img} alt={alt}/>
                             </ImgWrap>

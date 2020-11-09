@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import Video from '../../videos/video.mp4';
 import {Button} from '../ButtonElements';
-import {HeroContainer, HeroBg, VideoBg, HeroContent, 
+import {HeroContainer, HeroBg, HeroContent, 
     HeroH1, HeroP, HeroBtnWrapper, 
     ArrowForward} from './HeroElements';
 
@@ -31,7 +30,7 @@ const HeroSection = () => {
                         primary="false"
                         dark='false'
                         big='false'
-                        smooth = {true} duration={500} spy={true} exact='true' offset={-80}
+                        smooth = {true} duration={800} spy={true} exact='true' offset={-80}
                      > Find out more <ArrowForward hovered={hover ? 0 : 1}/>
                     </Button>
                 </HeroBtnWrapper>

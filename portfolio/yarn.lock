@@ -10291,11 +10291,13 @@ fsevents@^1.2.7:
     "@testing-library/react": ^9.5.0
     "@testing-library/user-event": ^7.2.1
     react: ^16.14.0
+    react-circular-progressbar: ^2.0.3
     react-dom: ^16.14.0
     react-icons: ^3.11.0
     react-router-dom: ^5.2.0
     react-scripts: 3.4.3
     react-scroll: ^1.8.1
+    react-visibility-sensor: ^5.1.1
     styled-components: ^5.2.0
   languageName: unknown
   linkType: soft
@@ -11437,6 +11439,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-circular-progressbar@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "react-circular-progressbar@npm:2.0.3"
+  peerDependencies:
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0
+  checksum: 58c28e6daf13cdc9de2a5c9d156ce48b53a29c1652810436d971cefb72e9664ce29779473b727a059921e0c34fa6b1d56f6480fb7aca76b78524a463dfd0922f
+  languageName: node
+  linkType: hard
+
 "react-dev-utils@npm:^10.2.1":
   version: 10.2.1
   resolution: "react-dev-utils@npm:10.2.1"
@@ -11626,6 +11637,18 @@ fsevents@^1.2.7:
     react: ^15.5.4 || ^16.0.0
     react-dom: ^15.5.4 || ^16.0.0
   checksum: e3c3697ff578f29498faa91e01275dc3e6f26d47913df400bb9d4be116a943fac5982bb8f39608597be91f950bb61546c6141058566054d9767488f242fdd06f
+  languageName: node
+  linkType: hard
+
+"react-visibility-sensor@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "react-visibility-sensor@npm:5.1.1"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: 3243e89a4931c5500d242aaf5d21b31fe68521325458a2e4532022ba4b8cff63203f563ac45d38795d5fcd59d7fc5dffc9d23e46a78fb7c15ca31cc41b6fd35f
   languageName: node
   linkType: hard
 
