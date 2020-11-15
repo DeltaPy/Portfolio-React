@@ -8,7 +8,6 @@ import {
     Percent
 } from './ProgressRingElements';
 
-
 const ProgressRing = ({ text,percentage }) => {
             return (
                 <VisibilitySensor>
@@ -20,10 +19,9 @@ const ProgressRing = ({ text,percentage }) => {
                   styles={buildStyles({
                     strokeLinecap: 'round',
                     pathTransitionDuration: 2,
-                    pathColor: `#FF4532`,
+                    pathColor: '#FF4532',
                     trailColor: 'white',
-                  })}
-                >
+                  })}>
                 <TextField>
                     <Skill>
                         {text}
@@ -36,9 +34,6 @@ const ProgressRing = ({ text,percentage }) => {
               );
             }}
           </VisibilitySensor>
- 
         );
 }
-
-
-export default ProgressRing;
+export  { ProgressRing };

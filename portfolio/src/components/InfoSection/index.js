@@ -1,24 +1,29 @@
 import React from 'react'
-import ProgressRing from './ProgressRing/ProgressRing.js';
+import ProgressBar from './ProgressBar/ProgressBar';
+
 import {
+    Img,
+    InfoRow,
+    Column1,
+    Column2,
+    ImgWrap,
+    TopLine,
+    Heading,
+    Subtitle,
+    SkillGrid,
+    InfoWrapper,
+    TextWrapper,
     InfoContainer,
-     InfoWrapper,
-      InfoRow,
-       Column1,
-        Column2,
-         TextWrapper,
-          TopLine,
-           Heading,
-            Subtitle,
-            ImgWrap,
-            Img,
-            SpinnerRow1,
-            SpinnerRow2,
-            SpinnerWrap,
-            }  from './InfoElements';
+    }  from './InfoElements';
 
-
-
+    const prBarData = [
+        {text: "HTML", completed: 100 },
+        {text: "CSS", completed: 100 },
+        {text: "JS", completed: 100 },
+        {text: "MongoDB", completed: 100 },
+        {text: "React", completed: 100 },
+        {text: "Nginx", completed: 100 },
+    ];
 
 const InfoSection = ({
         lightBg,
@@ -29,12 +34,8 @@ const InfoSection = ({
         headline,
         darkText,
         description,
-        buttonLabel,
         img,
         alt,
-        primary,
-        dark,
-        dark2
 }) => {
     return (
         <>
@@ -45,30 +46,11 @@ const InfoSection = ({
                         <TextWrapper>
                             <TopLine>Skills</TopLine>
                         </TextWrapper>
-            
-                            <SpinnerRow1>
-                                <SpinnerWrap>
-                                    <ProgressRing text={"HTML"} percentage={69}/>
-                                </SpinnerWrap>
-                                <SpinnerWrap>
-                                    <ProgressRing text={"CSS"} percentage={69}/>
-                                </SpinnerWrap>
-                                <SpinnerWrap>
-                                    <ProgressRing/>
-                                </SpinnerWrap>
-                            </SpinnerRow1>
-
-                            <SpinnerRow2>
-                                <SpinnerWrap>
-                                    <ProgressRing/>
-                                </SpinnerWrap>
-                                <SpinnerWrap>
-                                    <ProgressRing/>
-                                </SpinnerWrap>
-                                <SpinnerWrap>
-                                    <ProgressRing/>
-                                </SpinnerWrap>
-                            </SpinnerRow2>
+                            <SkillGrid>
+                                {prBarData.map((item, idx) => (
+                                    <ProgressBar key={idx} text={item.text} completed={item.completed}/>
+                                ))}
+                            </SkillGrid>
                         </Column1>
                         <Column2>
                         <TextWrapper>
@@ -88,5 +70,4 @@ const InfoSection = ({
         </>
     )
 }
-
 export default InfoSection

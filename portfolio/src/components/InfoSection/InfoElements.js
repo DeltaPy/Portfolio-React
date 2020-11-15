@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#171717')};
@@ -12,17 +13,17 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
-    justify-content: center;
+    // justify-content: center;
 `;
 
 export const InfoRow = styled.div`
     display: grid;
+    position: relative;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: ${({imgStart}) => imgStart ? `'col2 col1'` : `'col1 col2'`};
@@ -33,21 +34,27 @@ export const InfoRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;    
-    padding: 0 15px;
     grid-area: col1;
+    margin-top: 13%;
+    @media screen and ( max-width: 768px) {
+        margin-top: 10%;
+    }
 `;
 
 export const Column2 = styled.div`
-    margin-bottom: 10px;
-    padding: 0 15px;
+    margin-top: 20%;
     grid-area: col2;
+
+    @media screen and ( max-width: 768px) {
+        margin-top: 10%;
+    }
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    text-align: center;
+    margin: auto;
 `;
 
 export const TopLine = styled.p`
@@ -74,7 +81,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-    max-width: 440px;
+    // max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
@@ -89,6 +96,7 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
     width: 100%;
     height: 100%;
+    
 `;
 
 export const Img = styled.img`
@@ -100,6 +108,7 @@ export const Img = styled.img`
     flex-shrink: 0;
     user-select: none;
     border-radius: 50%;
+    margin: auto;
     
     animation-name: floating; 
     animation-duration: 3s; 
@@ -110,27 +119,20 @@ export const Img = styled.img`
         0% { transform: translate(0,  0px); } 
         50%  { transform: translate(0, 10px); } 
         100%   { transform: translate(0, -0px); }     
-    } 
+    }
 `;
 
-export const SpinnerWrap = styled.div`
-    height: 20%;
-    width: 20%;
-    margin-right: 10%;
-`;
-
-export const SpinnerRow1 = styled.div`
-    padding: 0 15px;
-    grid-area: row1;
-    display: flex;
-    margin-bottom: 1rem;
+export const SkillGrid = styled.div`
+    display: grid;
+    margin: auto;
+    width: 60%;
     
-`;
-export const SpinnerRow2 = styled.div`
-    padding: 0 15px;
-    grid-area: row2;
-    display: flex;
-    margin-bottom: 100%;
-`;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 1rem;
 
-
+    @media screen and ( max-width: 768px ) {
+        grid-template-rows: repeat(3fr);
+        grid-auto-columns: minmax(100px, auto);
+    }
+`;

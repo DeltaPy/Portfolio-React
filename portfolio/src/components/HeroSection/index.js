@@ -31,7 +31,7 @@ const HeroSection = () => {
                         dark='false'
                         big='false'
                         smooth = {true} duration={800} spy={true} exact='true' offset={-80}
-                     > Find out more <ArrowForward hovered={hover ? 0 : 1}/>
+                    >Find out more<ArrowForward hovered={hover ? 0 : 1}/>
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
