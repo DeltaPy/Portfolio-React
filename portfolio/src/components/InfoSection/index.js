@@ -17,10 +17,14 @@ import {
     }  from './InfoElements';
 
     const prBarData = [
+        {text: "C++", completed: 100 },
+        {text: "Java", completed: 100 },
+        {text: "Python", completed: 100 },
         {text: "HTML", completed: 100 },
         {text: "CSS", completed: 100 },
         {text: "JS", completed: 100 },
         {text: "MongoDB", completed: 100 },
+        {text: "SQL", completed: 100 },
         {text: "React", completed: 100 },
         {text: "Nginx", completed: 100 },
     ];

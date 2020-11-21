@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
     color: #fff;
+    height: 100vh;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#171717')};
 
     @media screen and (max-width: 768) {
@@ -27,6 +28,7 @@ export const InfoRow = styled.div`
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: ${({imgStart}) => imgStart ? `'col2 col1'` : `'col1 col2'`};
+    margin-top: 30px;
 
     @media screen and ( max-width: 768px) {
         grid-template-areas: ${({imgStart}) => imgStart ? `'col2' 'col1'` : `'col1 col1' 'col2 col2'`};
@@ -35,15 +37,15 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     grid-area: col1;
-    margin-top: 13%;
+    max-height: 525px;
     @media screen and ( max-width: 768px) {
         margin-top: 10%;
     }
 `;
 
 export const Column2 = styled.div`
-    margin-top: 20%;
     grid-area: col2;
+    max-height: 525px;
 
     @media screen and ( max-width: 768px) {
         margin-top: 10%;
@@ -52,7 +54,6 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
     padding-top: 0;
-    padding-bottom: 60px;
     text-align: center;
     margin: auto;
 `;
@@ -64,7 +65,7 @@ export const TopLine = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 60px;
 `;
 
 export const Heading = styled.h1`
@@ -81,8 +82,6 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-    // max-width: 440px;
-    margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ? '#171717' : '#fff')};
@@ -100,8 +99,8 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-    width: 20rem;
-    height: 22rem;
+    width: 18rem;
+    height: 20rem;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -127,7 +126,7 @@ export const SkillGrid = styled.div`
     margin: auto;
     width: 60%;
     
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 1rem;
 

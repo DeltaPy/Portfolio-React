@@ -4,3 +4,11 @@
   padding: 0;
   font-family: 'Encode Sans Expanded', sans-serif;
 }
+
+/* .slide, .selected {
+  background: red !important;
+} */
+
+.carousel .slide {
+  background: transparent !important;
+}
