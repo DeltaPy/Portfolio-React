@@ -17,16 +17,16 @@ import {
     }  from './InfoElements';
 
     const prBarData = [
-        {text: "C++", completed: 100 },
-        {text: "Java", completed: 100 },
-        {text: "Python", completed: 100 },
-        {text: "HTML", completed: 100 },
-        {text: "CSS", completed: 100 },
-        {text: "JS", completed: 100 },
-        {text: "MongoDB", completed: 100 },
-        {text: "SQL", completed: 100 },
-        {text: "React", completed: 100 },
-        {text: "Nginx", completed: 100 },
+        {text: "HTML", completed: 90 },
+        {text: "CSS", completed: 90 },
+        {text: "JS", completed: 60 },
+        {text: "React", completed: 70 },
+        {text: "MySQL", completed: 65 },
+        {text: "MongoDB", completed: 80 },
+        {text: "Nginx", completed: 65 },
+        {text: "C++", completed: 70 },
+        {text: "Java", completed: 70 },
+        {text: "Python", completed: 70 },
     ];
 
 const InfoSection = ({

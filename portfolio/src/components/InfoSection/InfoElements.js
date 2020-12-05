@@ -124,7 +124,7 @@ export const Img = styled.img`
 export const SkillGrid = styled.div`
     display: grid;
     margin: auto;
-    width: 60%;
+    width: 70%;
     
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);

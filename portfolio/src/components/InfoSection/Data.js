@@ -5,7 +5,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: 'About',
     headline: "Who's this guy?",
-    description: "I'm a Software Developer based in Rome, always willing to learn new things. I have a serious passion for programming, game development and 3D modeling.",
+    description: "I'm a Software Developer from Rome, always willing to learn new things. I have a serious passion for programming, game development and 3D modeling.",
     buttonLabel: '',
     imgStart: true,
     img: require('../../images/me.jpg'),
