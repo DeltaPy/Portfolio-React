@@ -29,7 +29,7 @@ const Projects = () => {
                     <ProjectsCard>
                         <ProjectsH2>Lazio Innova</ProjectsH2>
                         <a href={"http://www.lazioinnova.it/startupper-school-academy/startupper-banchi-scuola/"} target="_blank"><ProjectsIcon src={li}/></a>
-                        <ProjectsP>Regione Lazio.</ProjectsP>
+                        <ProjectsP>Startup competition.</ProjectsP>
                     </ProjectsCard>
                         
                     <ProjectsCard>
@@ -50,10 +50,7 @@ const Projects = () => {
                         <a href={"https://github.com/BassDrop07"} target="_blank"><ProjectsIcon src={gh}/></a>
                         <ProjectsP>My GitHub page where i have other side projects.</ProjectsP>
                     </ProjectsCard>
-
                 </ProjectsWrapper>
-                
-                    
             </ProjectsContainer>
         </>
     )

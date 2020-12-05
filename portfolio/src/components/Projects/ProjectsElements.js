@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectsContainer = styled.div`
+    // padding-top: 10%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -9,11 +10,7 @@ export const ProjectsContainer = styled.div`
     background: #171717;
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
-    }
-
-    @media screen and (max-width: 480px) {
-        height: 1300px;
+        height: 100%;
     }
 `;
 
@@ -30,15 +27,14 @@ export const ProjectsWrapper = styled.div`
 
 export const ProjectsCard = styled.div`
     background: #fff;
-    // height: 40%;
-    // width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border-radius: 10px;
     max-height: 40%; 
     max-width: 30%;
+    min-width: 30%;
+    min-height: 40%;
     padding: 30px;
     margin: 10px;
     transition: all 0.2 ease-in-out;
@@ -47,6 +43,13 @@ export const ProjectsCard = styled.div`
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        max-height: 60%; 
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 60%;
     }
 `;
 

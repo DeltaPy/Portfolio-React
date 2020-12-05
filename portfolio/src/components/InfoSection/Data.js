@@ -14,20 +14,3 @@ export const homeObjOne = {
     primary: true,
     darkText: false,
 };
-
-export const homeObjTwo = {
-    id: 'contact',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Unlimited Access',
-    headline: 'Unlimited Transaction with zero fees',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charget any fees.',
-    buttonLabel: 'Learn More',
-    imgStart: true,
-    img: require('../../images/svg-2.svg'),
-    alt: 'Piggybank',
-    dark: false,
-    primary: false,
-    darkText: true,
-};

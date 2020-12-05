@@ -21,7 +21,7 @@ const Home = () => {
             <Navbar toggle={toggle}/>
             <InfoSection {...homeObjOne}/>
             <Projects/>
-            <InfoSection {...homeObjTwo}/>
+            
             
             <Footer/>
         </>
