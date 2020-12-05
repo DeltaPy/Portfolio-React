@@ -22,32 +22,32 @@ const Projects = () => {
                 <ProjectsWrapper>
                     <ProjectsCard>
                         <ProjectsH2>ZeroRobotics</ProjectsH2>
-                        <a href={"http://zerorobotics.mit.edu"} target="_blank"><ProjectsIcon src={zr}/></a>
+                        <a href={"http://zerorobotics.mit.edu"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={zr}/></a>
                         <ProjectsP>MIT-NASA Programming Challenge.</ProjectsP>
                     </ProjectsCard>
 
                     <ProjectsCard>
                         <ProjectsH2>Lazio Innova</ProjectsH2>
-                        <a href={"http://www.lazioinnova.it/startupper-school-academy/startupper-banchi-scuola/"} target="_blank"><ProjectsIcon src={li}/></a>
+                        <a href={"http://www.lazioinnova.it/startupper-school-academy/startupper-banchi-scuola/"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={li}/></a>
                         <ProjectsP>Startup competition.</ProjectsP>
                     </ProjectsCard>
                         
                     <ProjectsCard>
                         <ProjectsH2>Cyber Challenge</ProjectsH2>
-                        <a href={"https://cyberchallenge.it/"} target="_blank"><ProjectsIcon src={cc}/></a>
+                        <a href={"https://cyberchallenge.it/"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={cc}/></a>
                         <ProjectsP>The first Italian training program in cybersecurity for high-school and undergraduate students.</ProjectsP>
                     </ProjectsCard>
 
                     <ProjectsCard>
                         <ProjectsH2>Pulsee Hack for Goal #12</ProjectsH2>
-                        <a href={"https://tree.it/hackathon-pulsee-mdw/"} target="_blank"><ProjectsIcon src={hp}/></a>
+                        <a href={"https://tree.it/hackathon-pulsee-mdw/"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={hp}/></a>
                         <ProjectsP>
                             Hackathon about sustainable consumption and production patters where my team classified second.
                         </ProjectsP>
                     </ProjectsCard>
                     <ProjectsCard>
                         <ProjectsH2>GitHub Stuff</ProjectsH2>
-                        <a href={"https://github.com/BassDrop07"} target="_blank"><ProjectsIcon src={gh}/></a>
+                        <a href={"https://github.com/BassDrop07"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={gh}/></a>
                         <ProjectsP>My GitHub page where i have other side projects.</ProjectsP>
                     </ProjectsCard>
                 </ProjectsWrapper>

@@ -9,7 +9,7 @@ export const ProjectsContainer = styled.div`
     align-items: center;
     background: #171717;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1300px) {
         height: 100%;
     }
 `;
@@ -31,10 +31,10 @@ export const ProjectsCard = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: 40%; 
+    max-height: 45%; 
     max-width: 30%;
     min-width: 30%;
-    min-height: 40%;
+    min-height: 45%;
     padding: 30px;
     margin: 10px;
     transition: all 0.2 ease-in-out;
@@ -51,12 +51,18 @@ export const ProjectsCard = styled.div`
         min-width: 100%;
         min-height: 60%;
     }
+
+    @media screen and (max-width: 1300px) {
+        max-height: 60%; 
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 60%;
+    }
 `;
 
 export const ProjectsIcon = styled.img`
-    height: 160px;
-    width: 160px;
-    margin-bottom: 10px;
+    height: 120px;
+    width: 120px;
 `;
 
 export const ProjectsH1 = styled.h1`
@@ -71,7 +77,6 @@ export const ProjectsH1 = styled.h1`
 
 export const ProjectsH2 = styled.h2`
     font-size: 1rem;
-    margin-bottom: 10px;
 `;
 
 export const ProjectsP = styled.p`

@@ -3937,13 +3937,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:^2.2.5":
-  version: 2.2.6
-  resolution: "classnames@npm:2.2.6"
-  checksum: 490eaeca5931846737ffd33e472a701d268d5b8bc5717dd4cf108a127b06e86e05350e06799abbbe763a0e4c945b4217f6700b7ae00ddc703505682c370e5cf2
-  languageName: node
-  linkType: hard
-
 "clean-css@npm:^4.2.3":
   version: 4.2.3
   resolution: "clean-css@npm:4.2.3"
@@ -10298,10 +10291,8 @@ fsevents@^1.2.7:
     "@testing-library/react": ^9.5.0
     "@testing-library/user-event": ^7.2.1
     react: ^16.14.0
-    react-circular-progressbar: ^2.0.3
     react-dom: ^16.14.0
     react-icons: ^3.11.0
-    react-responsive-carousel: ^3.2.10
     react-router-dom: ^5.2.0
     react-scripts: 3.4.3
     react-scroll: ^1.8.1
@@ -11233,7 +11224,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.5.8, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -11447,15 +11438,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-circular-progressbar@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "react-circular-progressbar@npm:2.0.3"
-  peerDependencies:
-    react: ^0.14.0 || ^15.0.0 || ^16.0.0
-  checksum: 58c28e6daf13cdc9de2a5c9d156ce48b53a29c1652810436d971cefb72e9664ce29779473b727a059921e0c34fa6b1d56f6480fb7aca76b78524a463dfd0922f
-  languageName: node
-  linkType: hard
-
 "react-dev-utils@npm:^10.2.1":
   version: 10.2.1
   resolution: "react-dev-utils@npm:10.2.1"
@@ -11502,15 +11484,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-easy-swipe@npm:^0.0.21":
-  version: 0.0.21
-  resolution: "react-easy-swipe@npm:0.0.21"
-  dependencies:
-    prop-types: ^15.5.8
-  checksum: fa493f3f5cc76cdbd1e88c5932bfbb2adf7bb5bcc40f9e56d2b0945a5a5fc471530642814f1e72a77d4b972c6c6d2cebfea2d80e5fcec5b8c341f1599f002009
-  languageName: node
-  linkType: hard
-
 "react-error-overlay@npm:^6.0.7":
   version: 6.0.7
   resolution: "react-error-overlay@npm:6.0.7"
@@ -11533,17 +11506,6 @@ fsevents@^1.2.7:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 11bcf1267a314a522615f626f3ce3727a3a24cdbf61c4d452add3550a7875326669631326cfb1ba3e92b6f72244c32ffecf93ad21c0cad8455d3e169d0e3f060
-  languageName: node
-  linkType: hard
-
-"react-responsive-carousel@npm:^3.2.10":
-  version: 3.2.10
-  resolution: "react-responsive-carousel@npm:3.2.10"
-  dependencies:
-    classnames: ^2.2.5
-    prop-types: ^15.5.8
-    react-easy-swipe: ^0.0.21
-  checksum: 7064903d220f3004aced0a6fbc01f000fee65efecd09ee87e066a5f2999f25e38132b95da04a8216861a4cb66c891e0470e853f465e683dae927ca68954793bb
   languageName: node
   linkType: hard
 

@@ -9,6 +9,10 @@
   background: red !important;
 } */
 
-.carousel .slide {
-  background: transparent !important;
+span {
+  color: #FF4532;
+}
+
+a {
+  color: white;
 }

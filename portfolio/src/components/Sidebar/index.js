@@ -1,5 +1,5 @@
 import React from 'react'
-import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute} from './SidebarElements';
+import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink} from './SidebarElements';
 
 const Sidebar = ({isOpen, toggle}) => {
     return (
@@ -9,22 +9,19 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}> 
+                    <SidebarLink to="home" onClick={toggle} smooth = {true} duration={800} spy={true} exact='true' offset={-80}> 
+                        Home
+                    </SidebarLink>
+                    <SidebarLink to="about" onClick={toggle} smooth = {true} duration={800} spy={true} exact='true' offset={70}> 
                         About
                     </SidebarLink>
-                    <SidebarLink to="discover" onClick={toggle}> 
-                        Discover
+                    <SidebarLink to="projects" onClick={toggle} smooth = {true} duration={800} spy={true} exact='true' offset={-80}> 
+                        Projects
                     </SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}> 
-                        Services
-                    </SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}> 
-                        Sign In
+                    <SidebarLink to="contact" onClick={toggle} smooth = {true} duration={800} spy={true} exact='true' offset={-80}> 
+                        Contacts
                     </SidebarLink>
                 </SidebarMenu>
-                <SideBtnWrap>
-                    <SidebarRoute to='/signin'>Sign In</SidebarRoute>
-                </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
     )

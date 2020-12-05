@@ -3,12 +3,18 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 const ProgressBar = (props) => {
     const { completed, text } = props;
+    var isSeen = false;
+    var a = 0;
 
 
     return (
+        
         <VisibilitySensor>
             {({ isVisible }) => {
-            const a = isVisible ? completed : 0;
+            if(isSeen === false && isVisible === true) {
+                a = completed;
+                isSeen = true;
+            }
             const containerStyles = {
                 height: '40%',
                 width: '100%',
