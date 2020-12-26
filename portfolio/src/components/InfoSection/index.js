@@ -19,10 +19,10 @@ import {
     const prBarData = [
         {text: "HTML", completed: 90 },
         {text: "CSS", completed: 90 },
-        {text: "JS", completed: 60 },
+        {text: "JS", completed: 65 },
         {text: "React", completed: 70 },
-        {text: "MySQL", completed: 65 },
-        {text: "MongoDB", completed: 80 },
+        {text: "MySQL", completed: 70 },
+        {text: "MongoDB", completed: 60 },
         {text: "Nginx", completed: 65 },
         {text: "C++", completed: 70 },
         {text: "Java", completed: 70 },

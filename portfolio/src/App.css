@@ -16,3 +16,9 @@ span {
 a {
   color: white;
 }
+
+body {
+  background-image: url("https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

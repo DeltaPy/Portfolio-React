@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import {Canvas as c} from 'react-three-fiber';
 
 
 export const HeroContainer = styled.div`
@@ -29,7 +30,7 @@ export const HeroContainer = styled.div`
     }
 `;
 
-export const HeroBg = styled.div`
+export const HeroBg = styled(c)`
     position: absolute;
     top: 0;
     right: 0;
@@ -40,13 +41,7 @@ export const HeroBg = styled.div`
     overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background: #232a34;
-`;
+
 
 export const HeroContent = styled.div`
     z-index: 3;
@@ -101,3 +96,4 @@ export const ArrowForward = styled(AiOutlineArrowRight)`
     transition: 0.4s;
     transform: ${({hovered}) => (hovered ? 'rotate(0deg)' : 'rotate(90deg)')};
 `;
+
