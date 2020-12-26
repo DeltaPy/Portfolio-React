@@ -12,7 +12,7 @@ function Background() {
       //This will add a starfield to the background of a scene
       var starsGeometry = new THREE.Geometry();
 
-      for (var i = 0; i < 10000; i++) {
+      for (var i = 0; i < 3000; i++) {
         var star = new THREE.Vector3();
         star.x = THREE.Math.randFloatSpread(2000);
         star.y = THREE.Math.randFloatSpread(2000);
@@ -25,11 +25,15 @@ function Background() {
 
       var starField = new THREE.Points(starsGeometry, starsMaterial);
 
+      
+
       if(!loaded) {
         scene.add(starField);
         setLoaded(!loaded);
       return <ambientLight />;
       }else return <ambientLight />;
+
+      
   
 }
 
