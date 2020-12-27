@@ -48,9 +48,26 @@ export const SocialLogo = styled(Link)`
     align-items: center;
     margin-bottom: 16px;
     font-weight: bold;
+
+    @media screen and ( max-width: 1024px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 `;
 
 export const WebsiteRights = styled.small`
     color: #fff;
     margin-bottom: 16px;
+
+    @media screen and ( max-width: 1024px) {
+        font-size: 2rem;
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
 `;

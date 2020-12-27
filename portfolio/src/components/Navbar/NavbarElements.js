@@ -3,20 +3,23 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: ${({ scrollNav }) => (scrollNav ? '#000' : '#171717')};
+    background-color: ${({ scrollNav }) => (scrollNav ? '#000' : '#171717')};
     height: 80px;
-    // margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
+    position: ${({ scrollNav }) => (scrollNav ? 'sticky' : 'static')};
     top: 0;
-    z-index: ${({ scrollNav }) => (scrollNav ? '2' : '0')};
-    transition: 0.2s all ease;
+    z-index: ${({ scrollNav }) => (scrollNav ? '2' : '1')};
+    transition: 0.3s all ease;
 
-    @media screen and (max-width: 960px) {
-        transition: 0.6s all ease;
+    @media screen and ( max-width: 1024px ) {
+        position: sticky;
+    }
+
+    @media screen and (max-width: 768px) {
+        position: sticky;
     }
 `;
 
@@ -25,7 +28,6 @@ export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     height: 80px;
-    z-index: 1;
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
@@ -41,20 +43,39 @@ export const NavLogo = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+
+    @media screen and ( max-width: 1024px ) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+    
 `;
 
 export const MobileIcon = styled.div`
     display: none;
 
-@media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #fff;
+    @media screen and (max-width: 1024px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 50%);
+        font-size: 2.5rem;
+        cursor: pointer;
+        color: #fff;
+    }
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
     }
 `;
 
@@ -64,6 +85,10 @@ export const NavMenu = styled.ul`
     list-style: none;
     text-align: center;
     margin-right: -22px;
+
+    @media screen and ( max-width: 1024px ) {
+        display: none;
+    }
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -89,15 +114,6 @@ export const NavLinks = styled(LinkS)`
     }
 `;
 
-export const NavBtn = styled.nav`
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-
-    }
-`;
 
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;

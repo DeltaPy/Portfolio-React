@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import {Button} from '../ButtonElements';
 import Background from './Background';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 import {
     HeroContainer, 
@@ -18,15 +20,17 @@ const HeroSection = () => {
     const onHover = () => {
         setHover(!hover);
     };
+
+    useEffect(() => {
+        Aos.init({ duration: 2000});
+    }, []);
     
-
-
     return (
-        <HeroContainer id="home">
+        <HeroContainer  id="home">
             <HeroBg>
-                <Background/>
+                <Background invalidateFrameloop/>
             </HeroBg>
-            <HeroContent>
+            <HeroContent data-aos="fade-up">
                 <HeroH1>Hello, I'm <span style={{color: "#FF4532"}}>Denis Dimchev.</span></HeroH1>
                 <HeroP>
                     I'm a software developer.

@@ -31,7 +31,7 @@ export const InfoRow = styled.div`
     grid-template-areas: ${({imgStart}) => imgStart ? `'col2 col1'` : `'col1 col2'`};
     margin-top: 30px;
 
-    @media screen and ( max-width: 768px) {
+    @media screen and ( max-width: 1024px) {
         grid-template-areas: ${({imgStart}) => imgStart ? `'col2' 'col1'` : `'col1 col1' 'col2 col2'`};
     }
 `;
@@ -39,6 +39,10 @@ export const InfoRow = styled.div`
 export const Column1 = styled.div`
     grid-area: col1;
     max-height: 525px;
+    
+    @media screen and ( max-width: 1024px) {
+        margin-top: 25%;
+    }
     @media screen and ( max-width: 768px) {
         margin-top: 10%;
     }
@@ -47,6 +51,10 @@ export const Column1 = styled.div`
 export const Column2 = styled.div`
     grid-area: col2;
     max-height: 525px;
+
+    @media screen and ( max-width: 1024px) {
+        margin-top: 10%;
+    }
 
     @media screen and ( max-width: 768px) {
         margin-top: 10%;
@@ -68,6 +76,10 @@ export const TopLine = styled.p`
     text-transform: uppercase;
     margin-bottom: 60px;
 
+    @media screen and ( max-width: 1024px) {
+        font-size: 3rem;
+    }
+
     @media screen and ( max-width: 768px) {
         font-size: 2rem;
     }
@@ -81,6 +93,10 @@ export const Heading = styled.h1`
     font-weight: 600;
     color: ${({lightText}) => (lightText ? '#f7f8fa' : '#171717')};
 
+    @media screen and ( max-width: 1024px) {
+        font-size: 42px;
+    }
+
     @media screen and (max-width: 480px) {
         font-size: 32px;
     }
@@ -88,8 +104,17 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     font-size: 18px;
-    line-height: 24px;
+    // line-height: 24px;
+    text-align: center;
     color: ${({darkText}) => (darkText ? '#171717' : '#fff')};
+
+    @media screen and ( max-width: 1024px) {
+        font-size: 34px;
+    }
+    @media screen and ( max-width: 768px) {
+        font-size: 18px;
+        
+    }
 `;
 
 export const BtnWrap = styled.div`
@@ -124,6 +149,15 @@ export const Img = styled.img`
         50%  { transform: translate(0, 10px); } 
         100%   { transform: translate(0, -0px); }     
     }
+
+    @media screen and ( max-width: 1024px) {
+        width: 22rem;
+        height: 24rem;
+    }
+    @media screen and ( max-width: 768px) {
+        width: 18rem;
+        height: 20rem;
+    }
 `;
 
 export const SkillGrid = styled.div`
@@ -133,10 +167,17 @@ export const SkillGrid = styled.div`
     
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    grid-column-gap: 1rem;
+    grid-column-gap: 1.5rem;
+
+    @media screen and ( max-width: 1024px ) {
+        grid-template-rows: repeat(3fr);
+        grid-auto-columns: minmax(100px, auto);
+        font-size: 1.5rem;
+    }
 
     @media screen and ( max-width: 768px ) {
         grid-template-rows: repeat(3fr);
         grid-auto-columns: minmax(100px, auto);
+        font-size: 1rem;
     }
 `;

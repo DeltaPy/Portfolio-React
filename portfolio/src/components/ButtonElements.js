@@ -17,6 +17,16 @@ export const Button = styled(Link)`
     align-items: center;
     transition: all 0.2s ease-in-out;
 
+    @media screen and (max-width: 1024px) {
+        font-size: 38px;
+        padding: 24px 48px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        padding: 14px 30px;
+    }
+
     &:hover {
         transition: all 0.2s ease-in-out;
         transform: scale(1.05);

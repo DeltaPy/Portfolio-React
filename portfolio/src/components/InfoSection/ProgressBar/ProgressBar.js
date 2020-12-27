@@ -5,8 +5,6 @@ const ProgressBar = (props) => {
     const { completed, text } = props;
     var isSeen = false;
     var a = 0;
-
-
     return (
         
         <VisibilitySensor>
@@ -47,5 +45,4 @@ const ProgressBar = (props) => {
         </VisibilitySensor>
     )
 }
-
 export default ProgressBar

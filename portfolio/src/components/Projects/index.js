@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import zr from "../../images/zr.png"
 import li from "../../images/li.png"
 import cc from "../../images/cc.png"
@@ -13,13 +13,19 @@ import {
     ProjectsH2, 
     ProjectsP
 } from './ProjectsElements';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const Projects = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000});
+    }, []);
+
     return (
         <>
-            <ProjectsContainer id="projects">
+            <ProjectsContainer  id="projects">
                 <ProjectsH1>Projects</ProjectsH1>
-                <ProjectsWrapper>
+                <ProjectsWrapper data-aos="fade-up">
                     <ProjectsCard>
                         <ProjectsH2>ZeroRobotics</ProjectsH2>
                         <a href={"http://zerorobotics.mit.edu"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={zr}/></a>

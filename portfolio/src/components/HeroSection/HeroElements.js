@@ -11,27 +11,17 @@ export const HeroContainer = styled.div`
     padding: 0 30px;
     height: 100vh;
     position: relative;
-    z-index: 1;
+    z-index: 1 !important;
 
-    :before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-        z-index: 1;
-    }
+    
 `;
 
 export const HeroBg = styled(c)`
-    width: 100%;
     height: 100%;
     position: fixed !important;
     top: 0;
     left: 0;
-    z-index: -1 !important;
+    z-index: 1 !important;
 `;
 
 
@@ -44,12 +34,21 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and ( max-width: 1024px) {
+        max-width: 1024px;
+    }
+
 `;
 
 export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 48px;
     text-align: center;
+
+    @media screen and ( max-width: 1024px) {
+        font-size: 65px;
+    }
 
     @media screen and (max-width: 768px) {
         font-size: 40px;
@@ -67,6 +66,10 @@ export const HeroP = styled.p`
     text-align: center;
     max-width: 600px;
 
+    @media screen and (max-width: 1024px) {
+        font-size: 42px;
+    }
+
     @media screen and (max-width: 768px) {
         font-size: 24px;
     }
@@ -81,6 +84,14 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 62px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 32px;
+    }
 `;
 
 export const ArrowForward = styled(AiOutlineArrowRight)`
@@ -88,5 +99,13 @@ export const ArrowForward = styled(AiOutlineArrowRight)`
     font-size: 20px;
     transition: 0.4s;
     transform: ${({hovered}) => (hovered ? 'rotate(0deg)' : 'rotate(90deg)')};
+
+    @media screen and (max-width: 1024px) {
+        font-size: 38px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
 `;
 

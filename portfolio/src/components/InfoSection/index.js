@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import ProgressBar from './ProgressBar/ProgressBar';
 
 import {
@@ -41,12 +43,15 @@ const InfoSection = ({
         img,
         alt,
 }) => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
     return (
         <>
-            <InfoContainer lightBg={lightBg} id={id}>
+            <InfoContainer  lightBg={lightBg} id={id}>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
-                        <Column1>
+                        <Column1 data-aos="fade-right">
                         <TextWrapper>
                             <TopLine>Skills</TopLine>
                         </TextWrapper>
@@ -56,11 +61,11 @@ const InfoSection = ({
                                 ))}
                             </SkillGrid>
                         </Column1>
-                        <Column2>
+                        <Column2 data-aos="fade-right">
                         <TextWrapper>
                             <TopLine>{topLine}</TopLine>
                         </TextWrapper>
-                            <ImgWrap>
+                            <ImgWrap >
                                 <Img src={img} alt={alt}/>
                             </ImgWrap>
                             <TextWrapper>

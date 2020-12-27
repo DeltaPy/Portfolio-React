@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {FaLinkedin, FaFacebook, FaYoutube, FaInstagram} from 'react-icons/fa';
-
 import {
     SocialLogoWrapper,
     ContactsContainer,
@@ -9,14 +8,20 @@ import {
     ContactsH1,
     ContactsH2
 } from './ContactsElements';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const Contacts = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1500});
+    }, []);
+
     return (
         <>
             <ContactsContainer id="contact"> 
-                <ContactsWrapper>
+                <ContactsWrapper data-aos="fade-up">
                     <ContactsH1>Contact Me</ContactsH1>
-                    <ContactsH2>Write me an email to: <span>me@devdenis.com</span> or contact me on my social's</ContactsH2>
+                    <ContactsH2>Write me an email to: <span>me@devdenis.com</span> or contact me on my social's:</ContactsH2>
                     <SocialLogoWrapper>
                         <SocialLogo>
                             <a  href={"https://www.linkedin.com/in/dev-denis/"} target="_blank" rel="noopener noreferrer">
