@@ -9,9 +9,10 @@ export const ProjectsContainer = styled.div`
     align-items: center;
     background: #171717;
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1024px) {
         height: 100%;
     }
+
 `;
 
 export const ProjectsWrapper = styled.div`
@@ -31,10 +32,10 @@ export const ProjectsCard = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: 45%; 
+    max-height: 55%; 
     max-width: 30%;
     min-width: 30%;
-    min-height: 45%;
+    min-height: 55%;
     padding: 30px;
     margin: 10px;
     transition: all 0.2 ease-in-out;

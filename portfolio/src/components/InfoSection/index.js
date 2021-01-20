@@ -1,16 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import ProgressBar from './ProgressBar/ProgressBar';
 
 import {
     Img,
+    Button,
     InfoRow,
     Column1,
     Column2,
     ImgWrap,
     TopLine,
     Heading,
+    BtnWrap,
     Subtitle,
     SkillGrid,
     InfoWrapper,
@@ -19,17 +21,30 @@ import {
     }  from './InfoElements';
 
     const prBarData = [
-        {text: "HTML", completed: 90 },
-        {text: "CSS", completed: 90 },
-        {text: "JS", completed: 65 },
-        {text: "React", completed: 70 },
-        {text: "MySQL", completed: 70 },
-        {text: "MongoDB", completed: 60 },
-        {text: "Nginx", completed: 65 },
-        {text: "C++", completed: 70 },
-        {text: "Java", completed: 70 },
-        {text: "Python", completed: 70 },
+        {text: "HTML", completed: 100 },
+        {text: "CSS", completed: 100 },
+        {text: "JS", completed: 100 },
+        {text: "React", completed: 100 },
+        {text: "MySQL", completed: 100 },
+        {text: "MongoDB", completed: 100 },
+        {text: "Nginx", completed: 100 },
+        {text: "C++", completed: 100 },
+        {text: "Java", completed: 100 },
+        {text: "Python", completed: 100},
     ];
+
+    // const prBarData = [
+    //     {text: "HTML", completed: 90 },
+    //     {text: "CSS", completed: 90 },
+    //     {text: "JS", completed: 65 },
+    //     {text: "React", completed: 70 },
+    //     {text: "MySQL", completed: 70 },
+    //     {text: "MongoDB", completed: 60 },
+    //     {text: "Nginx", completed: 65 },
+    //     {text: "C++", completed: 70 },
+    //     {text: "Java", completed: 70 },
+    //     {text: "Python", completed: 70 },
+    // ];
 
 const InfoSection = ({
         lightBg,
@@ -44,8 +59,13 @@ const InfoSection = ({
         alt,
 }) => {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 2000, once: true});
     }, []);
+
+    const [hover, setHover] = useState(false);
+    const onHover = () => {
+        setHover(!hover);
+    };
     return (
         <>
             <InfoContainer  lightBg={lightBg} id={id}>
@@ -74,6 +94,17 @@ const InfoSection = ({
                             </TextWrapper>
                         </Column2>
                     </InfoRow>
+                    <BtnWrap data-aos="fade-up">
+                    <a  href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer">
+                        <Button 
+                            onMouseEnter={onHover}
+                            onMouseLeave={onHover}
+                            primary="false"
+                            big="false"
+                        >Curriculum
+                        </Button>
+                    </a>
+                    </BtnWrap>
                 </InfoWrapper>
             </InfoContainer>
         </>

@@ -6,7 +6,7 @@ export const Button = styled(Link)`
     border-radius: 50px;
     background: ${({primary}) => (primary ? '#FF4532' : '#171717')};
     white-space: nowrap;
-    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+    padding: ${({big}) => (big ? '18px 58px' : '12px 30px')};
     color: ${({dark}) => (dark ? '#171717' : '#fff')};
     font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
     outline: none;
@@ -16,6 +16,7 @@ export const Button = styled(Link)`
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 
     @media screen and (max-width: 1024px) {
         font-size: 38px;
@@ -24,8 +25,9 @@ export const Button = styled(Link)`
 
     @media screen and (max-width: 768px) {
         font-size: 18px;
-        padding: 14px 30px;
+        padding: ${({big}) => (big ? '28px 58px' : '12px 30px')};
     }
+
 
     &:hover {
         transition: all 0.2s ease-in-out;
