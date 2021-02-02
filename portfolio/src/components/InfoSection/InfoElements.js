@@ -177,7 +177,7 @@ export const SkillGrid = styled.div`
     display: grid;
     // max-width: 70%;
     
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 1.5rem;
 

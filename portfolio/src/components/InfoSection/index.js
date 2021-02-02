@@ -21,16 +21,18 @@ import {
     }  from './InfoElements';
 
     const prBarData = [
-        {text: "HTML", completed: 100 },
+        {text: "JavaScript", completed: 100 },
+        {text: "TypeScript", completed: 100 },
         {text: "CSS", completed: 100 },
-        {text: "JS", completed: 100 },
-        {text: "React", completed: 100 },
+        {text: "React/Native", completed: 100 },
         {text: "MySQL", completed: 100 },
         {text: "MongoDB", completed: 100 },
         {text: "Nginx", completed: 100 },
         {text: "C++", completed: 100 },
         {text: "Java", completed: 100 },
         {text: "Python", completed: 100},
+        {text: "Blender", completed: 100},
+        {text: "Other...", completed: 100},
     ];
 
     // const prBarData = [

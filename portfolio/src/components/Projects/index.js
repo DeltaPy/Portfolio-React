@@ -4,6 +4,7 @@ import li from "../../images/li.png"
 import cc from "../../images/cc.png"
 import gh from "../../images/gh.png"
 import hp from "../../images/hp.png"
+import ef from "../../images/ef.png"
 import {
     ProjectsContainer, 
     ProjectsH1, 
@@ -26,34 +27,44 @@ const Projects = () => {
             <ProjectsContainer  id="projects">
                 <ProjectsH1>Projects</ProjectsH1>
                 <ProjectsWrapper data-aos="fade-up">
-                    <ProjectsCard>
+
+                    <ProjectsCard href={"http://zerorobotics.mit.edu"} target="_blank" rel="noopener noreferrer">
                         <ProjectsH2>ZeroRobotics</ProjectsH2>
-                        <a href={"http://zerorobotics.mit.edu"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={zr}/></a>
+                        <ProjectsIcon src={zr}/>
                         <ProjectsP>MIT-NASA Programming Challenge.</ProjectsP>
                     </ProjectsCard>
-
-                    <ProjectsCard>
+        
+                    <ProjectsCard href={"http://www.lazioinnova.it/startupper-school-academy/startupper-banchi-scuola/"} target="_blank" rel="noopener noreferrer">
                         <ProjectsH2>Lazio Innova</ProjectsH2>
-                        <a href={"http://www.lazioinnova.it/startupper-school-academy/startupper-banchi-scuola/"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={li}/></a>
-                        <ProjectsP>Startup competition.</ProjectsP>
+                        <ProjectsIcon src={li}/>
+                        <ProjectsP>Startup competition about reducing CO₂ emissions.</ProjectsP>
                     </ProjectsCard>
                         
-                    <ProjectsCard>
+                    <ProjectsCard href={"https://cyberchallenge.it/"} target="_blank" rel="noopener noreferrer">
                         <ProjectsH2>Cyber Challenge</ProjectsH2>
-                        <a href={"https://cyberchallenge.it/"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={cc}/></a>
+                        <ProjectsIcon src={cc}/>
                         <ProjectsP>The first Italian training program in cybersecurity for high-school and undergraduate students.</ProjectsP>
                     </ProjectsCard>
 
-                    <ProjectsCard>
+                    <ProjectsCard href={"https://www.itisfermi.edu.it/Orario/19_30%20ott_web/index.html"} target="_blank" rel="noopener noreferrer">
+                        <ProjectsH2>Orario ITIS E. Fermi</ProjectsH2>
+                        <ProjectsIcon src={ef}/>
+                        <ProjectsP>
+                            A website for my high-school's timetable.
+                        </ProjectsP>
+                    </ProjectsCard>
+
+                    <ProjectsCard href={"https://tree.it/hackathon-pulsee-mdw/"} target="_blank" rel="noopener noreferrer">
                         <ProjectsH2>Pulsee Hack for Goal #12</ProjectsH2>
-                        <a href={"https://tree.it/hackathon-pulsee-mdw/"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={hp}/></a>
+                        <ProjectsIcon src={hp}/>
                         <ProjectsP>
                             Hackathon about sustainable consumption and production patters where my team classified second.
                         </ProjectsP>
                     </ProjectsCard>
-                    <ProjectsCard>
+
+                    <ProjectsCard href={"https://github.com/DeltaPy"} target="_blank" rel="noopener noreferrer">
                         <ProjectsH2>GitHub Stuff</ProjectsH2>
-                        <a href={"https://github.com/BassDrop07"} target="_blank" rel="noopener noreferrer"><ProjectsIcon src={gh}/></a>
+                        <ProjectsIcon src={gh}/>
                         <ProjectsP>My GitHub page where i have other side projects.</ProjectsP>
                     </ProjectsCard>
                 </ProjectsWrapper>

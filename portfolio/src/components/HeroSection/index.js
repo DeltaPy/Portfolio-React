@@ -33,7 +33,7 @@ const HeroSection = () => {
             <HeroContent data-aos="fade-up">
                 <HeroH1>Hello, I'm <span style={{color: "#FF4532"}}>Denis Dimchev.</span></HeroH1>
                 <HeroP>
-                    I'm a software developer.
+                    I'm a Full Stack Developer.
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button 
