@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import ProgressBar from './ProgressBar/ProgressBar';
+import Background from './StarField.js';
 
 import {
     Img,
+    InfoBg,
     Button,
     InfoRow,
     Column1,
@@ -22,7 +24,6 @@ import {
 
     const prBarData = [
         {text: "JavaScript", completed: 100 },
-        {text: "TypeScript", completed: 100 },
         {text: "CSS", completed: 100 },
         {text: "React/Native", completed: 100 },
         {text: "MySQL", completed: 100 },
@@ -71,6 +72,10 @@ const InfoSection = ({
     return (
         <>
             <InfoContainer  lightBg={lightBg} id={id}>
+                <InfoBg>
+                    <Background invalidateFrameloop/>
+                </InfoBg>
+                
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1 data-aos="fade-right">

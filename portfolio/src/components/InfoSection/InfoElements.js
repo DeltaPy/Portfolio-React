@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import {Canvas as c} from 'react-three-fiber';
 
 export const InfoContainer = styled.div`
     color: #fff;
@@ -10,6 +10,15 @@ export const InfoContainer = styled.div`
         padding: 100px 0;
         height: 100%;
     }
+`;
+
+export const InfoBg = styled(c)`
+    height: 100vh;
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1 !important;
 `;
 
 export const InfoWrapper = styled.div`
