@@ -9,9 +9,11 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: ${({ scrollNav }) => (scrollNav ? 'sticky' : 'static')};
+    // position: ${({ scrollNav }) => (scrollNav ? 'sticky' : 'static')};
     top: 0;
-    z-index: ${({ scrollNav }) => (scrollNav ? '2' : '1')};
+    // z-index: ${({ scrollNav }) => (scrollNav ? '3 !important' : '2 !important')};
+    position: sticky;
+    z-index: 2 !important;
     transition: 0.3s all ease;
 
     @media screen and ( max-width: 1024px ) {

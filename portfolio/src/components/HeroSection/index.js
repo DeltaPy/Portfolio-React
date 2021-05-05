@@ -28,9 +28,9 @@ const HeroSection = () => {
     
     return (
         <HeroContainer  id="home">
-            <HeroBg>
+            {/* <HeroBg> */}
                 {/* <Background invalidateFrameloop/> */}
-            </HeroBg>
+            {/* </HeroBg> */}
             <HeroContent data-aos="fade-up">
                 <HeroH1>Hello, I'm <span style={{color: "#FF4532"}}>Denis Dimchev.</span></HeroH1>
                 <HeroP>

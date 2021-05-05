@@ -21,7 +21,7 @@ export const HeroBg = styled(c)`
     position: absolute !important;
     top: 0;
     left: 0;
-    z-index: 3 !important;
+    z-index: -3 !important;
 `;
 
 
