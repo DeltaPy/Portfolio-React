@@ -21,7 +21,7 @@ const Contacts = () => {
             <ContactsContainer id="contact"> 
                 <ContactsWrapper data-aos="fade-up">
                     <ContactsH1>Contact Me</ContactsH1>
-                    <ContactsH2>Write me an email to: <span>me@devdenis.com</span> or contact me on my social's:</ContactsH2>
+                    <ContactsH2>Write me an email to: <span>denis.dimchev@gmail.com</span> or contact me on my social's:</ContactsH2>
                     <SocialLogoWrapper>
                         <SocialLogo>
                             <a  href={"https://www.linkedin.com/in/dev-denis/"} target="_blank" rel="noopener noreferrer">
