@@ -24,30 +24,18 @@ import {
 
     const prBarData = [
         {text: "JavaScript", completed: 100 },
-        {text: "CSS", completed: 100 },
-        {text: "React/Native", completed: 100 },
         {text: "MySQL", completed: 100 },
-        {text: "MongoDB", completed: 100 },
-        {text: "Nginx", completed: 100 },
-        {text: "C++", completed: 100 },
-        {text: "Java", completed: 100 },
+        {text: "CSS", completed: 100 },
+        {text: "C++/C#", completed: 100 },
+        {text: "ExpressJS", completed: 100},
+        {text: "React/Native", completed: 100 },
         {text: "Python", completed: 100},
+        {text: "MongoDB", completed: 100 },
+        {text: "Nginx/Apache", completed: 100 },
+        {text: "Java", completed: 100 },
         {text: "Blender", completed: 100},
         {text: "Other...", completed: 100},
     ];
-
-    // const prBarData = [
-    //     {text: "HTML", completed: 90 },
-    //     {text: "CSS", completed: 90 },
-    //     {text: "JS", completed: 65 },
-    //     {text: "React", completed: 70 },
-    //     {text: "MySQL", completed: 70 },
-    //     {text: "MongoDB", completed: 60 },
-    //     {text: "Nginx", completed: 65 },
-    //     {text: "C++", completed: 70 },
-    //     {text: "Java", completed: 70 },
-    //     {text: "Python", completed: 70 },
-    // ];
 
 const InfoSection = ({
         lightBg,

@@ -24,8 +24,6 @@ const HeroSection = () => {
         Aos.init({ duration: 2000, once: true});
     }, []);
 
-    const html = '<p>This is a test</p>'
-    
     return (
         <HeroContainer  id="home">
             {/* <HeroBg> */}

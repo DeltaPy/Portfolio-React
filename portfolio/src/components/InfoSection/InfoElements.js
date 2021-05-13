@@ -54,6 +54,7 @@ export const Column1 = styled.div`
     max-height: 525px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: -10%;
     align:center;
     align-items: center;
     justify-content: center;
