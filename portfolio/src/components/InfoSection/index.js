@@ -3,11 +3,11 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 import ProgressBar from './ProgressBar/ProgressBar';
 import Background from './StarField.js';
+import {Button} from '../ButtonElements';
 
 import {
     Img,
     InfoBg,
-    Button,
     InfoRow,
     Column1,
     Column2,
@@ -75,6 +75,17 @@ const InfoSection = ({
                                     <ProgressBar key={idx} text={item.text} completed={item.completed}/>
                                 ))}
                             </SkillGrid>
+                            <BtnWrap data-aos="fade-up">
+                                <a href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer">
+                                <Button 
+                                    onMouseEnter={onHover}
+                                    onMouseLeave={onHover}
+                                    primary="false"
+                                    big="false"
+                                    fontBig="true"
+                                >Curriculum Vitae</Button>
+                                </a>
+                            </BtnWrap>
                         </Column1>
                         <Column2 data-aos="fade-right">
                         <TextWrapper>
@@ -89,17 +100,17 @@ const InfoSection = ({
                             </TextWrapper>
                         </Column2>
                     </InfoRow>
-                    <BtnWrap data-aos="fade-up">
+                    {/* <BtnWrap data-aos="fade-up">
                     <a  href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer">
                         <Button 
                             onMouseEnter={onHover}
                             onMouseLeave={onHover}
                             primary="false"
-                            big="false"
+                            big="true"
                         >Curriculum
                         </Button>
                     </a>
-                    </BtnWrap>
+                    </BtnWrap> */}
                 </InfoWrapper>
             </InfoContainer>
         </>

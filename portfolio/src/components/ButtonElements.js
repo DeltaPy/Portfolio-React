@@ -6,13 +6,14 @@ export const Button = styled(Link)`
     border-radius: 50px;
     background: ${({primary}) => (primary ? '#FF4532' : '#171717')};
     white-space: nowrap;
-    padding: ${({big}) => (big ? '18px 58px' : '12px 30px')};
+    padding: ${({big}) => (big ? '28px 48px' : '12px 30px')};
     color: ${({dark}) => (dark ? '#171717' : '#fff')};
-    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    font-size: ${({fontBig}) => (fontBig ? '24px' : '16px')};
     outline: none;
     border: none;
     cursor: pointer;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
@@ -20,7 +21,7 @@ export const Button = styled(Link)`
 
     @media screen and (max-width: 1024px) {
         font-size: 38px;
-        padding: 24px 48px;
+        padding: ${({big}) => (big ? '28px 58px' : '12px 30px')};
     }
 
     @media screen and (max-width: 768px) {
@@ -28,6 +29,10 @@ export const Button = styled(Link)`
         padding: ${({big}) => (big ? '28px 58px' : '12px 30px')};
     }
 
+    @media screen and (max-width: 480px) {
+        font-size: 19px;
+        padding: ${({big}) => (big ? '18px 42px' : '12px 30px')};
+    }
 
     &:hover {
         transition: all 0.2s ease-in-out;

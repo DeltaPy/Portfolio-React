@@ -17,11 +17,11 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroBg = styled(c)`
-    height: 100%;
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    z-index: -3 !important;
+    // height: 100%;
+    // position: absolute !important;
+    // top: 0;
+    // left: 0;
+    // z-index: -3 !important;
 `;
 
 

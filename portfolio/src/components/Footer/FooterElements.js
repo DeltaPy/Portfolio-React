@@ -70,4 +70,8 @@ export const WebsiteRights = styled.small`
     @media screen and (max-width: 768px) {
         font-size: 1rem;
     }
+
+    @media screen and ( max-width: 480px ) {
+        font-size: 0.6rem;
+    }
 `;

@@ -14,11 +14,9 @@ const ProgressBar = (props) => {
                 isSeen = true;
             }
             const containerStyles = {
-                height: '40%',
-                width: '100%',
+                height: '100%',
                 backgroundColor: "white",
                 borderRadius: 3,
-                margin: 15
             }
             const labelStyles = {
                 
@@ -30,7 +28,7 @@ const ProgressBar = (props) => {
                 backgroundColor: '#FF4532',
                 borderRadius: 'inherit',
                 textAlign: 'center',
-                paddingTop: 9,
+                padding: 6,
                 transition: 'width 2s ease-in-out',
                 width: `${a}%`,
             }

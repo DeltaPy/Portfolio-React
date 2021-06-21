@@ -3,19 +3,18 @@ import {Canvas as c} from 'react-three-fiber';
 
 export const InfoContainer = styled.div`
     color: #fff;
-    height: 100vh;
+    // height: 100vh;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#171717')};
+    padding: 100px 0;
 
     @media screen and (max-width: 1024px) {
         padding: 100px 0;
-        height: 100%;
     }
 `;
 
 export const InfoBg = styled(c)`
-    height: 100vh;
+    height: 100vh !important;
     position: fixed !important;
-    width: 100%;
     top: 0;
     left: 0;
     z-index: 1 !important;
@@ -24,7 +23,6 @@ export const InfoBg = styled(c)`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
@@ -35,6 +33,7 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
     display: grid;
     position: relative;
+    
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: ${({imgStart}) => imgStart ? `'col2 col1'` : `'col1 col2'`};
@@ -48,20 +47,17 @@ export const InfoRow = styled.div`
         grid-template-areas: ${({imgStart}) => imgStart ? `'col2' 'col1'` : `'col1 col1' 'col2 col2'`};
     }
 `;
-
+//SKILLS
 export const Column1 = styled.div`
     grid-area: col1;
-    max-height: 525px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: -10%;
+    height: 100%;
     align:center;
     align-items: center;
     justify-content: center;
     
     
     @media screen and ( max-width: 1024px) {
-        margin-top: 25%;
+        margin-top: 15%;
     }
 
     @media screen and ( max-width: 900px) {
@@ -72,11 +68,16 @@ export const Column1 = styled.div`
     @media screen and ( max-width: 768px) {
         margin-top: 30%;
     }
+
+    // @media screen and ( max-width: 480px) {
+    //     margin-top: 60%;
+
+    // }
 `;
 
 export const Column2 = styled.div`
     grid-area: col2;
-    max-height: 525px;
+    // max-height: 525px;
 
     @media screen and ( max-width: 1024px) {
         margin-top: 10%;
@@ -96,7 +97,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: #FF4532;
-    font-size: 16px;
+    font-size: 1.5rem;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -132,7 +133,9 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     font-size: 18px;
     // line-height: 24px;
+    margin: auto;
     text-align: center;
+    // word-wrap: break-word;
     color: ${({darkText}) => (darkText ? '#171717' : '#fff')};
 
     @media screen and ( max-width: 1024px) {
@@ -140,6 +143,11 @@ export const Subtitle = styled.p`
     }
     @media screen and ( max-width: 768px) {
         font-size: 18px;
+        
+    }
+    @media screen and ( max-width: 480px) {
+        font-size: 14px;
+        width: 100vw;
         
     }
 `;
@@ -185,61 +193,39 @@ export const Img = styled.img`
 
 export const SkillGrid = styled.div`
     display: grid;
-    // max-width: 70%;
-    
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.5rem;
+    row-gap: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
 
     @media screen and ( max-width: 1024px ) {
-        grid-template-rows: repeat(3fr);
-        grid-auto-columns: minmax(100px, auto);
-        font-size: 1.5rem;
-        margin-right: 7%;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1rem;
+        row-gap: 20px;
     }
 
     @media screen and ( max-width: 768px ) {
-        grid-template-rows: repeat(3fr);
-        grid-auto-columns: minmax(100px, auto);
+        grid-template-columns: repeat(2, 1fr);
         font-size: 1rem;
+        row-gap: 20px;
+    }
+
+    @media screen and ( max-width: 480px ) {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1rem;
+        row-gap: 20px;
     }
 `;
 
 export const BtnWrap = styled.div`
-    margin-top: 6rem;
+    margin-top: 5rem;
     display: flex;
-    justify-content: center;
-    text-decoration: none !important;
-`;
-
-export const Button = styled.div`
-    border-radius: 50px;
-    background: ${({primary}) => (primary ? '#FF4532' : '#171717')};
-    white-space: nowrap;
-    padding: ${({big}) => (big ? '18px 58px' : '12px 30px')};
-    color: ${({dark}) => (dark ? '#171717' : '#fff')};
-    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
-    outline: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    transition: all 0.2s ease-in-out;
     text-decoration: none !important;
 
-    @media screen and (max-width: 1024px) {
-        font-size: 38px;
-        padding: 24px 48px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 18px;
-        padding: ${({big}) => (big ? '28px 58px' : '12px 30px')};
-    }
-
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        transform: scale(1.05);
+    @media screen and ( max-width: 480px ) {
+        margin-top: 3rem;
     }
 `;

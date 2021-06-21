@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     // position: ${({ scrollNav }) => (scrollNav ? 'sticky' : 'static')};
     top: 0;
     // z-index: ${({ scrollNav }) => (scrollNav ? '3 !important' : '2 !important')};
