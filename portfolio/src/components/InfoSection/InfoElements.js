@@ -223,8 +223,6 @@ export const BtnWrap = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none !important;
-
     @media screen and ( max-width: 480px ) {
         margin-top: 3rem;
     }

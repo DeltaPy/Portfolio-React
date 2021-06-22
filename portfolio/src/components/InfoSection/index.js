@@ -75,17 +75,20 @@ const InfoSection = ({
                                     <ProgressBar key={idx} text={item.text} completed={item.completed}/>
                                 ))}
                             </SkillGrid>
-                            <BtnWrap data-aos="fade-up">
                                 <a href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer">
-                                <Button 
-                                    onMouseEnter={onHover}
-                                    onMouseLeave={onHover}
-                                    primary="false"
-                                    big="false"
-                                    fontBig="true"
-                                >Curriculum Vitae</Button>
-                                </a>
+                            <BtnWrap data-aos="fade-up">
+                                    <Button 
+                                        href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer"
+                                        onMouseEnter={onHover}
+                                        onMouseLeave={onHover}
+                                        primary="false"
+                                        big="false"
+                                        fontBig="true"
+                                    >
+                                    Curriculum Vitae
+                                    </Button>
                             </BtnWrap>
+                                </a>
                         </Column1>
                         <Column2 data-aos="fade-right">
                         <TextWrapper>
