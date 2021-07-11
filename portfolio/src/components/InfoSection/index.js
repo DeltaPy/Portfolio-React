@@ -3,7 +3,7 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 import ProgressBar from './ProgressBar/ProgressBar';
 import Background from './StarField.js';
-import {Button} from '../ButtonElements';
+import {Button, Button2} from '../ButtonElements';
 
 import {
     Img,
@@ -75,20 +75,18 @@ const InfoSection = ({
                                     <ProgressBar key={idx} text={item.text} completed={item.completed}/>
                                 ))}
                             </SkillGrid>
-                                <a href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer">
                             <BtnWrap data-aos="fade-up">
-                                    <Button 
-                                        href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer"
-                                        onMouseEnter={onHover}
-                                        onMouseLeave={onHover}
-                                        primary="false"
-                                        big="false"
-                                        fontBig="true"
-                                    >
-                                    Curriculum Vitae
-                                    </Button>
+                                <Button2 
+                                    href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer"
+                                    onMouseEnter={onHover}
+                                    onMouseLeave={onHover}
+                                    primary="false"
+                                    big="false"
+                                    fontBig="true"
+                                >
+                                Curriculum Vitae
+                                </Button2>
                             </BtnWrap>
-                                </a>
                         </Column1>
                         <Column2 data-aos="fade-right">
                         <TextWrapper>

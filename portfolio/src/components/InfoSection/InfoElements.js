@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Canvas as c} from 'react-three-fiber';
 
+
 export const InfoContainer = styled.div`
     color: #fff;
     // height: 100vh;
@@ -223,6 +224,7 @@ export const BtnWrap = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
     @media screen and ( max-width: 480px ) {
         margin-top: 3rem;
     }
