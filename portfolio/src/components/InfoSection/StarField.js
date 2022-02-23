@@ -22,6 +22,7 @@ const Background = () => {
   }
     
   var starsMaterial = new THREE.PointsMaterial({ color: 0x888888 });
+  starsMaterial.size = Math.random() * (0.6 - 0.2) + 0.2
   
     
   var starField = new THREE.Points(starsGeometry, starsMaterial);
