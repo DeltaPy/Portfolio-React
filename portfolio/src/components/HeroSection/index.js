@@ -26,13 +26,13 @@ const HeroSection = () => {
 
     return (
         <HeroContainer  id="home">
-            {/* <HeroBg> */}
-                {/* <Background invalidateFrameloop/> */}
-            {/* </HeroBg> */}
+            {/* <HeroBg>
+                <Background invalidateFrameloop/>
+            </HeroBg> */}
             <HeroContent data-aos="fade-up">
                 <HeroH1>Hello, I'm <span style={{color: "#FF4532"}}>Denis Dimchev.</span></HeroH1>
                 <HeroP>
-                    I'm a Full Stack Developer.
+                    I'm a Front End Developer.
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button 

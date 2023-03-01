@@ -16,14 +16,13 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsWrapper = styled.div`
-    height: 80%;
+    // height: 80%;
     width: 70%;
     align-items: center;
-    flex-direction: row;
+    // flex-direction: row;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-
 `;
 
 export const ProjectsCard = styled.a`

@@ -3,7 +3,8 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 import ProgressBar from './ProgressBar/ProgressBar';
 import Background from './StarField.js';
-import {Button, Button2} from '../ButtonElements';
+import { Button2 } from '../ButtonElements';
+// import { Button } from '../ButtonElements';
 
 import {
     Img,
