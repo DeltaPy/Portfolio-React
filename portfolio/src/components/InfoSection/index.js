@@ -78,7 +78,7 @@ const InfoSection = ({
                             </SkillGrid>
                             <BtnWrap data-aos="fade-up">
                                 <Button2 
-                                    href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer"
+                                    href={'https://resume.io/r/rVEbCiaNs'} target="_blank" rel="noopener noreferrer"
                                     onMouseEnter={onHover}
                                     onMouseLeave={onHover}
                                     primary="false"
