@@ -30,7 +30,7 @@ const HeroSection = () => {
                 <Background invalidateFrameloop/>
             </HeroBg> */}
             <HeroContent data-aos="fade-up">
-                <HeroH1>🚧UPDATE UNDER CONSTRUCTION🚧</HeroH1>
+                <HeroH1>🚧Outdated... working on an update🚧</HeroH1>
                 <br/>
                 <br/>
                 <br/>
