@@ -11,13 +11,14 @@ import {
     HackathonPlus
 } from '../../images/index.js'
 import {
-    ProjectsContainer, 
-    ProjectsH1, 
-    ProjectsWrapper, 
-    ProjectsCard, 
-    ProjectsIcon, 
-    ProjectsH2, 
-    ProjectsP
+    ProjectsContainer,
+    ProjectH1,
+    ProjectsWrapper,
+    ProjectCardWrapper,
+    ProjectCard,
+    ProjectIcon,
+    ProjectH2,
+    ProjectP
 } from './ProjectsElements';
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -25,61 +26,66 @@ import { Button } from 'react-scroll';
 
 const Projects = () => {
     useEffect(() => {
-        Aos.init({ duration: 2000, once: true});
+        Aos.init({ duration: 2000, once: true });
     }, []);
 
     return (
         <>
-            <ProjectsContainer  id="projects">
-                <ProjectsH1>Projects</ProjectsH1>
-                    <ProjectsWrapper data-aos="fade-up">
-                <Carousel>
-                    <ProjectsCard href={"http://zerorobotics.mit.edu"} target="_blank" rel="noopener noreferrer">
-                        <ProjectsH2>ZeroRobotics</ProjectsH2>
-                        <ProjectsIcon src={ZeroRobotics}/>
-                        <ProjectsP>
-                            MIT-NASA Programming Challenge.
-                        </ProjectsP>
-                    </ProjectsCard>
-                    <ProjectsCard href={"http://www.lazioinnova.it/startupper-school-academy/startupper-banchi-scuola/"} target="_blank" rel="noopener noreferrer">
-                        <ProjectsH2>Lazio Innova</ProjectsH2>
-                        <ProjectsIcon src={LazioInnova}/>
-                        <ProjectsP>
-                            Startup competition about reducing CO₂ emissions.
-                        </ProjectsP>
-                    </ProjectsCard>
-                    <ProjectsCard href={"https://cyberchallenge.it/"} target="_blank" rel="noopener noreferrer">
-                        <ProjectsH2>Cyber Challenge</ProjectsH2>
-                        <ProjectsIcon src={CyberChallenge}/>
-                        <ProjectsP>
-                            The first Italian training program in cybersecurity for high-school and undergraduate students.
-                        </ProjectsP>
-                    </ProjectsCard>
-                    <ProjectsCard href={"https://www.itisfermi.edu.it/Orario/19_30%20ott_web/index.html"} target="_blank" rel="noopener noreferrer">
-                        <ProjectsH2>Orario ITIS E. Fermi</ProjectsH2>
-                        <ProjectsIcon src={EnricoFermi}/>
-                        <ProjectsP>
-                            A website for my high-school's timetable.
-                        </ProjectsP>
-                    </ProjectsCard>
+            <ProjectsContainer id="projects">
+                <ProjectH1>Projects</ProjectH1>
+                <ProjectsWrapper data-aos="fade-up">
+                    <Carousel showStatus={false}>
+                        <ProjectCardWrapper>
+                            <ProjectCard href={"http://zerorobotics.mit.edu"} target="_blank" rel="noopener noreferrer">
+                                <ProjectH2>ZeroRobotics</ProjectH2>
+                                <ProjectIcon src={ZeroRobotics} />
+                                <ProjectP>
+                                    MIT-NASA Programming Challenge.
+                                </ProjectP>
+                            </ProjectCard>
+                            <ProjectCard href={"http://www.lazioinnova.it/startupper-school-academy/startupper-banchi-scuola/"} target="_blank" rel="noopener noreferrer">
+                                <ProjectH2>Lazio Innova Startup Academy</ProjectH2>
+                                <ProjectIcon src={LazioInnova} />
+                                <ProjectP>
+                                    Startup competition about reducing CO₂ emissions where my team competed in the finals.
+                                </ProjectP>
+                            </ProjectCard>
+                            <ProjectCard href={"https://cyberchallenge.it/"} target="_blank" rel="noopener noreferrer">
+                                <ProjectH2>Cyber Challenge</ProjectH2>
+                                <ProjectIcon src={CyberChallenge} />
+                                <ProjectP>
+                                    The first Italian training program in cybersecurity for high-school and undergraduate students.
+                                </ProjectP>
+                            </ProjectCard>
+                        </ProjectCardWrapper>
+                        <ProjectCardWrapper>
 
-                    <ProjectsCard href={"https://tree.it/hackathon-pulsee-mdw/"} target="_blank" rel="noopener noreferrer">
-                        <ProjectsH2>Pulsee Hack for Goal #12</ProjectsH2>
-                        <ProjectsIcon src={HackathonPlus}/>
-                        <ProjectsP>
-                            Hackathon about sustainable consumption and production patters where my team classified second.
-                        </ProjectsP>
-                    </ProjectsCard>
+                            <ProjectCard href={"https://www.itisfermi.edu.it/Orario/19_30%20ott_web/index.html"} target="_blank" rel="noopener noreferrer">
+                                <ProjectH2>Orario ITIS E. Fermi</ProjectH2>
+                                <ProjectIcon src={EnricoFermi} />
+                                <ProjectP>
+                                    A website for my high-school's timetable.
+                                </ProjectP>
+                            </ProjectCard>
 
-                    <ProjectsCard href={"https://github.com/DeltaPy"} target="_blank" rel="noopener noreferrer">
-                        <ProjectsH2>GitHub Stuff</ProjectsH2>
-                        <ProjectsIcon src={GitHub}/>
-                        <ProjectsP>
-                            My GitHub page where i have other side projects.
-                        </ProjectsP>
-                    </ProjectsCard>
+                            <ProjectCard href={"https://tree.it/hackathon-pulsee-mdw/"} target="_blank" rel="noopener noreferrer">
+                                <ProjectH2>Pulsee Hack for Goal #12</ProjectH2>
+                                <ProjectIcon src={HackathonPlus} />
+                                <ProjectP>
+                                    Hackathon about sustainable consumption and production patters where my team classified second.
+                                </ProjectP>
+                            </ProjectCard>
+
+                            <ProjectCard href={"https://github.com/DeltaPy"} target="_blank" rel="noopener noreferrer">
+                                <ProjectH2>GitHub Stuff</ProjectH2>
+                                <ProjectIcon src={GitHub} />
+                                <ProjectP>
+                                    My GitHub page where i have other projects.
+                                </ProjectP>
+                            </ProjectCard>
+                        </ProjectCardWrapper>
                     </Carousel>
-                    </ProjectsWrapper>
+                </ProjectsWrapper>
             </ProjectsContainer>
         </>
     )

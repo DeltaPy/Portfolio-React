@@ -25,7 +25,7 @@ export const ContactsWrapper = styled.div`
 
 export const SocialLogoWrapper = styled.div`
     width: 100%;
-    display flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
 `

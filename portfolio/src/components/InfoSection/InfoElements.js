@@ -5,7 +5,7 @@ import {Canvas as c} from 'react-three-fiber';
 export const InfoContainer = styled.div`
     color: #fff;
     // height: 100vh;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#171717')};
+    background: ${({$lightBg}) => ($lightBg ? '#f9f9f9' : '#171717')};
     padding: 100px 0;
 
     @media screen and (max-width: 1024px) {

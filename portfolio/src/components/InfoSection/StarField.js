@@ -2,30 +2,27 @@ import React, {useState} from "react";
 import { useThree } from "react-three-fiber";
 import * as THREE from "three";
 
-
 const Background = () => {
   const [loaded, setLoaded] = useState(false);
   const { scene } = useThree();
 
-  var starsGeometry = new THREE.Geometry();
-  
+  let starsGeometry = new THREE.BufferGeometry();
+  let points = [];
   if(!loaded) {
     setLoaded(!loaded);
-    for (var i = 0; i < 3000; i++) {
-      var star = new THREE.Vector3();
-      star.x = THREE.Math.randFloatSpread(2000);
-      star.y = THREE.Math.randFloatSpread(2000);
-      star.z = THREE.Math.randFloatSpread(2000);
-      
-      starsGeometry.vertices.push(star);
+    for (let i = 0; i < 3000; i++) {
+      let star = new THREE.Vector3();
+      star.x = THREE.MathUtils.randFloatSpread(2000);
+      star.y = THREE.MathUtils.randFloatSpread(2000);
+      star.z = THREE.MathUtils.randFloatSpread(2000);
+      points.push(star);
     }
+    starsGeometry.setFromPoints(points);
   }
     
-  var starsMaterial = new THREE.PointsMaterial({ color: 0x888888 });
+  let starsMaterial = new THREE.PointsMaterial({ color: 0x888888 });
   starsMaterial.size = Math.random() * (0.6 - 0.2) + 0.2
-  
-    
-  var starField = new THREE.Points(starsGeometry, starsMaterial);
+  let starField = new THREE.Points(starsGeometry, starsMaterial);
   
   scene.add(starField);
 

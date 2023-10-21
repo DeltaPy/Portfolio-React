@@ -12,37 +12,39 @@ export const ProjectsContainer = styled.div`
     @media screen and (max-width: 1024px) {
         height: 100%;
     }
-
 `;
 
 export const ProjectsWrapper = styled.div`
-    // height: 80%;
-    width: 70%;
+    width: 85%;
     align-items: center;
-    // flex-direction: row;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
 `;
 
-export const ProjectsCard = styled.a`
+export const ProjectCardWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0 50px 0;
+`;
+
+export const ProjectCard = styled.a`
     background: #fff;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: 55%; 
-    max-width: 30%;
-    min-width: 30%;
-    min-height: 55%;
+    height: 400px; 
+    width: 350px;
     padding: 30px;
     margin: 10px;
-    transition: all 0.2 ease-in-out;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
 
@@ -59,16 +61,14 @@ export const ProjectsCard = styled.a`
         min-width: 100%;
         min-height: 60%;
     }
-
-    
 `;
 
-export const ProjectsIcon = styled.img`
+export const ProjectIcon = styled.img`
     height: 120px;
     width: 120px;
 `;
 
-export const ProjectsH1 = styled.h1`
+export const ProjectH1 = styled.h1`
     font-size: 2.5rem;
     color: #FF4532;
     margin-bottom: 64px;
@@ -84,12 +84,12 @@ export const ProjectsH1 = styled.h1`
     }
 `;
 
-export const ProjectsH2 = styled.h2`
+export const ProjectH2 = styled.h2`
     font-size: 1.5rem;
     text-align: center;
 `;
 
-export const ProjectsP = styled.p`
+export const ProjectP = styled.p`
     font-size: 1.2rem;
     text-align: center;
 `;
