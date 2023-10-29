@@ -10,7 +10,7 @@
 
 # misc
 
-/.yarn
-/.vscode
+.yarn/
+.vscode/
 .yarnrc.yml*
-portfolio/yarn.lock
+yarn.lock
