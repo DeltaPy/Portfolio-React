@@ -6,7 +6,6 @@ const ProgressBar = (props) => {
     var isSeen = false;
     var a = 0;
     return (
-        
         <VisibilitySensor>
             {({ isVisible }) => {
             if(isSeen === false && isVisible === true) {

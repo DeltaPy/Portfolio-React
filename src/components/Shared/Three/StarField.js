@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { useThree } from "react-three-fiber";
+import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
 const Background = () => {
@@ -10,7 +10,7 @@ const Background = () => {
   let points = [];
   if(!loaded) {
     setLoaded(!loaded);
-    for (let i = 0; i < 3000; i++) {
+    for (let i = 0; i < 2000; i++) {
       let star = new THREE.Vector3();
       star.x = THREE.MathUtils.randFloatSpread(2000);
       star.y = THREE.MathUtils.randFloatSpread(2000);
@@ -21,7 +21,7 @@ const Background = () => {
   }
     
   let starsMaterial = new THREE.PointsMaterial({ color: 0x888888 });
-  starsMaterial.size = Math.random() * (0.6 - 0.2) + 0.2
+  starsMaterial.size = Math.random() * (0.4) + 0.6;
   let starField = new THREE.Points(starsGeometry, starsMaterial);
   
   scene.add(starField);

@@ -38,8 +38,8 @@ export const ProjectCard = styled.a`
     align-items: center;
     height: 400px; 
     width: 350px;
-    padding: 30px;
     margin: 10px;
+    padding: 20px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
 
@@ -51,22 +51,16 @@ export const ProjectCard = styled.a`
     @media screen and (max-width: 1024px) {
         max-height: 60%; 
         max-width: 100%;
-        min-width: 100%;
-        min-height: 60%;
     }
 
     @media screen and (max-width: 768px) {
-        max-height: 60%; 
+        max-height: 50%; 
         max-width: 100%;
-        min-width: 100%;
-        min-height: 60%;
+        width: 80%;
+        margin: 10px 0 10px 0;
     }
 `;
 
-export const ProjectIcon = styled.img`
-    height: 120px;
-    width: 120px;
-`;
 
 export const ProjectH1 = styled.h1`
     font-size: 2.5rem;
@@ -74,13 +68,11 @@ export const ProjectH1 = styled.h1`
     margin-bottom: 64px;
 
     @media screen and (max-width: 1024px) {
-        margin-top: 10%;
         font-size: 3rem;
     }
 
-    @media screen and (max-width: 480px) {
-        font-size: 2rem;
-        margin-top: 0%;
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
     }
 `;
 
@@ -92,4 +84,10 @@ export const ProjectH2 = styled.h2`
 export const ProjectP = styled.p`
     font-size: 1.2rem;
     text-align: center;
+`;
+
+export const ImageWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    height: 100%;
 `;

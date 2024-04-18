@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import {Canvas as c} from 'react-three-fiber';
+import {Canvas as c} from '@react-three/fiber';
 
 
 export const HeroContainer = styled.div`
@@ -65,6 +65,7 @@ export const HeroP = styled.p`
     font-size: 24px;
     text-align: center;
     max-width: 600px;
+    font-variant-numeric: tabular-nums;
 
     @media screen and (max-width: 1024px) {
         font-size: 42px;
@@ -96,7 +97,7 @@ export const HeroBtnWrapper = styled.div`
 
 export const ArrowForward = styled(AiOutlineArrowRight)`
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 24px;
     transition: 0.4s;
     transform: ${({hovered}) => (hovered ? 'rotate(0deg)' : 'rotate(90deg)')};
 

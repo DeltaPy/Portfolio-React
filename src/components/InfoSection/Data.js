@@ -1,16 +1,8 @@
 export const homeObjOne = {
-    id: 'about',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'About',
-    headline: "Who's this guy?",
-    description: "I'm a Software Developer from Rome, always willing to learn new things. I have a serious passion for programming, game development and 3D modeling.",
-    buttonLabel: '',
-    imgStart: true,
-    img: require('../../images/me.jpg'),
-    alt: 'Me :)',
-    dark: true,
-    primary: true,
-    darkText: false,
+  id: "about",
+  topLine: "About",
+  headline: "Who's this guy?",
+  description: `I'm a Software Developer from Rome who is
+    always willing to learn new things. Im currently working as a Web and App developer using the coolest tecnologies. 😎`,
+  myImg: require("../../images/me.png"),
 };
