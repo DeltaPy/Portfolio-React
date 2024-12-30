@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '../ButtonElements';
+import { LinkButton } from '../ButtonElements';
 import ThreeBackground from '../Shared/Three/ThreeBackground';
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -44,7 +44,7 @@ const HeroSection = () => {
                     A {age} year-old software developer.
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button
+                    <LinkButton
                         to='about'
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
@@ -54,7 +54,7 @@ const HeroSection = () => {
                         $fontBig={true}
                         smooth={true} duration={800} spy={true} exact='true' offset={-80}
                     >Find out more<ArrowForward hovered={hover ? 0 : 1} />
-                    </Button>
+                    </LinkButton>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

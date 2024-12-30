@@ -31,7 +31,6 @@ export const SocialLogoWrapper = styled.div`
 `
 
 export const SocialLogo = styled.h1`
-    margin: 5%;
     color: #fff;
     cursor: pointer;
     text-decoration: none;

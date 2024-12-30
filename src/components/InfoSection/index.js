@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import ProgressBar from './ProgressBar/ProgressBar';
-import { Button } from '../ButtonElements';
+import { AButton } from '../ButtonElements';
 
 import {
     Img,
@@ -70,23 +70,25 @@ const InfoSection = ({
                                 <TopLine>{topLine}</TopLine>
                             </TextWrapper>
                             <ImgWrap >
-                                <Img src={myImg} /> 
+                                <Img src={myImg} />
                             </ImgWrap>
                             <TextWrapper>
                                 <Heading $lightText={true}>{headline}</Heading>
                                 <Subtitle>{description}</Subtitle>
                             </TextWrapper>
                             <BtnWrap data-aos="fade-up">
-                                <Button
-                                    href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer"
-                                    onMouseEnter={onHover}
-                                    onMouseLeave={onHover}
-                                    $primary="false"
-                                    $big="false"
-                                    $fontBig="false"
-                                >
-                                    Curriculum Vitae
-                                </Button>
+                                <a href="https://resume.io/r/rVEbCiaNs" target="_blank" rel="noopener noreferrer">
+                                    <AButton
+                                        href={"https://resume.io/r/rVEbCiaNs"} target="_blank" rel="noopener noreferrer"
+                                        onMouseEnter={onHover}
+                                        onMouseLeave={onHover}
+                                        $primary="false"
+                                        $big="false"
+                                        $fontBig="false"
+                                    >
+                                        Curriculum Vitae
+                                    </AButton>
+                                </a>
                             </BtnWrap>
                         </Column2>
                     </InfoRow>
