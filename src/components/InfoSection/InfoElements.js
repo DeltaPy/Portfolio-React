@@ -5,7 +5,7 @@ export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ $lightBg }) => ($lightBg ? "#f9f9f9" : "#171717")};
   padding: 100px 0;
-
+  overflow: hidden;
   @media screen and (max-width: 1024px) {
     padding: 100px 0;
   }
@@ -53,7 +53,7 @@ export const InfoRow = styled.div`
 export const Column1 = styled.div`
   grid-area: col1;
   height: 100%;
-  align: center;
+  align-items: center;
   align-items: center;
   justify-content: center;
 

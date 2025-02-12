@@ -46,7 +46,21 @@ const Projects = () => {
                 <ImageWrapper>
                   <img src={ZeroRobotics} style={{ width: imgWidth }} />
                 </ImageWrapper>
-                <ProjectP>MIT-NASA Programming Challenge.</ProjectP>
+                <ProjectP>MIT-NASA Programming Challenge</ProjectP>
+              </ProjectCard>
+              <ProjectCard
+                href={"https://tree.it/hackathon-pulsee-mdw/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ProjectH2>Pulsee Hack for Goal #12</ProjectH2>
+                <ImageWrapper>
+                  <img src={HackathonPlus} style={{ width: imgWidth }} />
+                </ImageWrapper>
+                <ProjectP>
+                  Hackathon about sustainable consumption and production patters
+                  where my team finished second taking home 1500 Euro
+                </ProjectP>
               </ProjectCard>
               <ProjectCard
                 href={
@@ -61,7 +75,7 @@ const Projects = () => {
                 </ImageWrapper>
                 <ProjectP>
                   Startup competition about reducing CO₂ emissions where my team
-                  competed in the finals.
+                  competed in the finals
                 </ProjectP>
               </ProjectCard>
               <ProjectCard
@@ -75,7 +89,7 @@ const Projects = () => {
                 </ImageWrapper>
                 <ProjectP>
                   The first Italian training program in cybersecurity for
-                  high-school and undergraduate students.
+                  high-school and undergraduate students
                 </ProjectP>
               </ProjectCard>
             </ProjectCardWrapper>
@@ -92,23 +106,10 @@ const Projects = () => {
                   <img src={EnricoFermi} style={{ width: imgWidth }} />
                 </ImageWrapper>
                 <ProjectP>
-                  A website for my high-school&apos;s timetable.
+                  A website for my high-school&apos;s timetable
                 </ProjectP>
               </ProjectCard>
-              <ProjectCard
-                href={"https://tree.it/hackathon-pulsee-mdw/"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ProjectH2>Pulsee Hack for Goal #12</ProjectH2>
-                <ImageWrapper>
-                  <img src={HackathonPlus} style={{ width: imgWidth }} />
-                </ImageWrapper>
-                <ProjectP>
-                  Hackathon about sustainable consumption and production patters
-                  where my team classified second.
-                </ProjectP>
-              </ProjectCard>
+              
 
               <ProjectCard
                 href={"https://github.com/DeltaPy"}
@@ -119,7 +120,7 @@ const Projects = () => {
                 <ImageWrapper>
                   <img src={GitHub} style={{ width: imgWidth }} />
                 </ImageWrapper>
-                <ProjectP>My GitHub page where i have other projects.</ProjectP>
+                <ProjectP>My GitHub page where i have other projects</ProjectP>
               </ProjectCard>
             </ProjectCardWrapper>
           </Carousel>
